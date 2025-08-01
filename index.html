@@ -11,15 +11,16 @@
 </head>
 
 <body>
+
     <div>
 
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> Instagram </a>
-                <form class="d-flex" role="search">
-                    <button class="btn btn-success m-1 p-2">Create a new post</button>
+                <form class="d-flex">
+                    <button class="btn btn-success  m-1 p-2" type="button" data-bs-target="#modal" data-bs-toggle="modal" >Create a new post</button>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle m-1 p-2" type="button"
+                        <button class="btn btn-secondary dropdown-toggle mx-5 p-2 mt-1" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-gear"></i>
                         </button>
@@ -30,12 +31,11 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                            <li><button class="dropdown-item text-danger " type="button">Logout</button></li>
 
                         </ul>
                     </div>
                 </form>
-
             </div>
     </div>
     </nav>
@@ -44,23 +44,25 @@
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
-                        class="fa-solid fa-table-cells"></i></button>
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <i class="fa-solid fa-stop"></i></button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
-                        class="fa-solid fa-stop"></i></button>
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i></button>
             </li>
 
         </ul>
-        <div class="container-fluid" id="myTabContent" >
-            <div class="tab-pane fade show active position-absolute top-50 start-50 translate-middle-x" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">
+        <div class="container-fluid" id="myTabContent">
+            <div class="tab-pane fade show active position-absolute mt-5 start-50 translate-middle-x "
+                id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <div class="card mb-5" style="width: 30rem;">
                     <div class="card-head">
                         <div class="row">
-                            <div class="col-9 mx-2 my-2"><h2>My first Photo</h2></div>
+                            <div class="col-9 mx-2 my-2">
+                                <h2>My first Photo</h2>
+                            </div>
                             <div class="col-2 mt-3">08/26</div>
                         </div>
                     </div>
@@ -72,25 +74,130 @@
                     </div>
                 </div>
 
-                
+
                 <div class="card mb-5" style="width: 30rem;">
                     <div class="card-head">
-                        <p>Hola</p>
+                        <div class="row">
+                            <div class="col-9 mx-2 my-2">
+                                <h2>My Second Photo</h2>
+                            </div>
+                            <div class="col-2 mt-3">08/26</div>
+                        </div>
                     </div>
                     <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body " style="top: 10px;">
+                        <p class="mb-0"><strong>20 likes</strong></p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card mb-5" style="width: 30rem;">
+                    <div class="card-head">
+                        <div class="row">
+                            <div class="col-9 mx-2 my-2">
+                                <h2>My third Photo</h2>
+                            </div>
+                            <div class="col-2 mt-3">08/26</div>
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                    <div class="card-body " style="top: 10px;">
+                        <p class="mb-0"><strong>20 likes</strong></p>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card’s content.</p>
                     </div>
                 </div>
 
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                ...</div>
+
+
+
+            <div class="tab-pane fade mt-5" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                tabindex="0">
+                <table class="table table-borderless">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class=" img-fluid h-100"
+                                src="https://as1.ftcdn.net/jpg/15/09/59/62/1000_F_1509596222_Y7zhFrE7iBU6uLki9uGMWcoIZp6zWPli.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class=" img-fluid h-100"
+                                src="https://as2.ftcdn.net/v2/jpg/03/09/59/85/1000_F_309598560_Bb6FusOxf9PsRnCCGZY5nnrgZ5WDP51Q.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid h-100"
+                                src="https://as1.ftcdn.net/v2/jpg/01/93/17/72/1000_F_193177287_MoePmN9oepxLTvycGQiVLQ3W68KLrm73.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid h-100 mt-4"
+                                src="https://as2.ftcdn.net/v2/jpg/00/02/24/65/1000_F_2246597_MRSlmvjt3isfpzH5bu3D1BzdRkOhrA.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid h-100 mt-4"
+                                src="https://as1.ftcdn.net/v2/jpg/02/70/25/48/1000_F_270254841_otSDX3fPBgcbCiUdir82QjgyF8XSQwD5.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid h-100 mt-4"
+                                src="https://as1.ftcdn.net/v2/jpg/02/66/92/16/1000_F_266921676_CmyewDnYcPKYdJvNVvqIxxty7jlMSOOU.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class=" img-fluid h-100 mt-5"
+                                src="https://as2.ftcdn.net/v2/jpg/03/12/93/33/1000_F_312933371_vMqXBtR0s84b7WHGbUWpgIzVmhrgp8za.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid h-100 mt-5"
+                                src="https://as2.ftcdn.net/v2/jpg/02/36/99/53/1000_F_236995304_qxI5yEjDzF4lCfYrrbXmLVwvOnw6sqOY.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid h-100 mt-5"
+                                src="https://as2.ftcdn.net/v2/jpg/02/96/35/63/1000_F_296356355_0YlFGZllBt6G7J7MbQUK9XTJTmU351ev.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </table>
+
+            </div>
 
 
         </div>
+        <div class="modal" id="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Create new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="ms-0">Caption</p>
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Add the caption of your post here">
+                        </div>
+                        <button class="btn btn-light mt-3" type="button"><i class="fa-solid fa-camera"></i></button>
+                        <button class="btn btn-light mt-3" type="button"><i class="fa-solid fa-location-dot"></i></button>
 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
